@@ -1,0 +1,36 @@
+{
+  "name": "cfn-staticweb-example",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "deploy": "serverless package && aws s3 cp .serverless/cfn-staticweb-example.zip s3://cfn-staticweb-example/functions.zip && aws s3 cp .serverless/cloudformation-template-update-stack.json s3://cfn-staticweb-example/template.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y13i/cfn-staticweb-example.git"
+  },
+  "author": {
+    "name": "Yoriki Yamaguchi",
+    "email": "email@y13i.com",
+    "url": "https://y13i.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/y13i/cfn-staticweb-example/issues"
+  },
+  "homepage": "https://github.com/y13i/cfn-staticweb-example#readme",
+  "devDependencies": {
+    "@types/source-map-support": "^0.4.0",
+    "@y13i/apex.js": "^2.0.1",
+    "aws-sdk": "^2.75.0",
+    "axios": "^0.16.2",
+    "json-loader": "^0.5.4",
+    "retryx": "^0.0.6",
+    "serverless": "^1.16.0",
+    "serverless-webpack": "^1.0.0-rc.4",
+    "source-map-support": "^0.4.15",
+    "ts-loader": "^2.2.0",
+    "tslint": "^5.4.3",
+    "typescript": "^2.3.4"
+  }
+}
