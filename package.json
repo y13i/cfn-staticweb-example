@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "deploy": "serverless package && aws s3 cp .serverless/cfn-staticweb-example.zip s3://cfn-staticweb-example/functions.zip && aws s3 cp .serverless/cloudformation-template-update-stack.json s3://cfn-staticweb-example/template.json"
+    "deploy": "serverless package && node scripts/editTemplate.js && aws s3 cp .serverless/cfn-staticweb-example.zip s3://cfn-staticweb-example/functions.zip && aws s3 cp .serverless/cfn.json s3://cfn-staticweb-example/cfn.json && aws s3 cp templates/index.html.ejs s3://cfn-staticweb-example/index.html.ejs"
   },
   "repository": {
     "type": "git",
@@ -20,10 +20,12 @@
   },
   "homepage": "https://github.com/y13i/cfn-staticweb-example#readme",
   "devDependencies": {
-    "@types/source-map-support": "^0.4.0",
+    "@types/ejs": "^2.3.33",
+    "@types/node": "^8.0.1",
     "@y13i/apex.js": "^2.0.1",
-    "aws-sdk": "^2.75.0",
+    "aws-sdk": "^2.76.0",
     "axios": "^0.16.2",
+    "ejs": "^2.5.6",
     "json-loader": "^0.5.4",
     "retryx": "^0.0.6",
     "serverless": "^1.16.0",

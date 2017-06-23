@@ -10,6 +10,10 @@
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-0.0.13.tgz#122510ac73e3427184fb9a94146d157edb2f9f11"
 
+"@types/ejs@^2.3.33":
+  version "2.3.33"
+  resolved "https://registry.yarnpkg.com/@types/ejs/-/ejs-2.3.33.tgz#0a4e0a7aeee09944154b06ce5a2ac6a118f92b00"
+
 "@types/graphql@^0.9.0":
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.9.1.tgz#b04ebe84bc997cc60dbea2ed4d0d4342c737f99d"
@@ -18,15 +22,9 @@
   version "0.0.34"
   resolved "https://registry.yarnpkg.com/@types/isomorphic-fetch/-/isomorphic-fetch-0.0.34.tgz#3c3483e606c041378438e951464f00e4e60706d6"
 
-"@types/node@*":
+"@types/node@^8.0.1":
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.1.tgz#89c271e0c3b9ebb6a3756dd601336970b6228b77"
-
-"@types/source-map-support@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@types/source-map-support/-/source-map-support-0.4.0.tgz#a62a1866614af68c888173c001481f242aaf148b"
-  dependencies:
-    "@types/node" "*"
 
 "@y13i/apex.js@^2.0.1":
   version "2.0.1"
@@ -231,9 +229,9 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
-aws-sdk@^2.7.13, aws-sdk@^2.75.0:
-  version "2.75.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.75.0.tgz#f78802e46f95b7044a094da259057dd8d5d8da17"
+aws-sdk@^2.7.13, aws-sdk@^2.76.0:
+  version "2.76.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.76.0.tgz#2c37bf04e37ab4a26b5ff7c7583d596034c76309"
   dependencies:
     buffer "5.0.6"
     crypto-browserify "1.0.9"
@@ -727,6 +725,10 @@ ecc-jsbn@~0.1.1:
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
+
+ejs@^2.5.6:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.5.6.tgz#479636bfa3fe3b1debd52087f0acb204b4f19c88"
 
 emojis-list@^2.0.0:
   version "2.1.0"
