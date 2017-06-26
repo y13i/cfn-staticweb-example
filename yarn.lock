@@ -10,6 +10,10 @@
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-0.0.13.tgz#122510ac73e3427184fb9a94146d157edb2f9f11"
 
+"@types/aws-lambda@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-0.0.14.tgz#b4381490153ae4ee52c3ed18ef6e8dc776ed4403"
+
 "@types/ejs@^2.3.33":
   version "2.3.33"
   resolved "https://registry.yarnpkg.com/@types/ejs/-/ejs-2.3.33.tgz#0a4e0a7aeee09944154b06ce5a2ac6a118f92b00"

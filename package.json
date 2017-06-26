@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/y13i/cfn-staticweb-example#readme",
   "devDependencies": {
+    "@types/aws-lambda": "^0.0.14",
     "@types/ejs": "^2.3.33",
     "@types/node": "^8.0.1",
     "@y13i/apex.js": "^2.0.1",

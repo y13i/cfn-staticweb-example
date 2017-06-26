@@ -6,7 +6,12 @@ import axios from "axios";
 import retryx from "retryx";
 import {render} from "ejs";
 
-export default λ(async (event, context) => {
+import {
+  CloudFormationCustomResourceEvent,
+  CloudFormationCustomResourceResponse,
+} from "@types/aws-lambda";
+
+export default λ(async (event: CloudFormationCustomResourceEvent, context) => {
   console.log(JSON.stringify({event, context}));
 
   const s3 = new S3();
@@ -18,7 +23,7 @@ export default λ(async (event, context) => {
     LogicalResourceId: event.LogicalResourceId,
   };
 
-  let customResourceResponse: any;
+  let customResourceResponse: CloudFormationCustomResourceResponse;
 
   try {
     const templateBody = await (async () => {
@@ -107,8 +112,9 @@ export default λ(async (event, context) => {
     customResourceResponse = {
       ...customResourceResponseBase,
 
-      Status: "FAILED",
-      Data:   {Error: err},
+      Status:             "FAILED",
+      PhysicalResourceId: event.RequestType === "Create" ? "" : event.PhysicalResourceId,
+      Data:               {Error: err},
     };
   }
 
